@@ -42,3 +42,12 @@ NMNH-2.0/
 │       └─ main.js              # Custom JS scripts for animations or charts
 └─ utils/                       # (Optional) Helper Python scripts
     └─ data_fetcher.py          # For fetching live BTC/Nifty data
+
+
+## NOTES
+1. backend/ → main Flask app and templates
+2. docker-compose.yml → links web and db containers
+3. jenkins/ → Jenkins pipeline files for CI/CD
+4. db_init/ → optional SQL scripts for initializing the database
+5. static/ → CSS/JS/images, like candlestick animation JS or chart libraries
+6. utils/ → placeholder for data fetchers, PNL calculators, etc.
