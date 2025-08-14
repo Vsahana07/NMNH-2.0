@@ -1,11 +1,6 @@
 # NMNH-2.0
 NMNH 2.0 – Multi-strategy Nifty/BankNifty/Sensex/BTCUSD Hedged Dashboard. Real-time options data, live PNL, breakevens, and interactive trading dashboard with full DevOps CI/CD integration.
 
-# NMNH 2.0
-
-**Next-level Multi-strategy Nifty/Hedged Dashboard**  
-Real-time options data, live PNL, breakevens, and interactive trading dashboard with full DevOps CI/CD integration.
-
 ---
 
 ## Features
@@ -24,3 +19,26 @@ Real-time options data, live PNL, breakevens, and interactive trading dashboard 
 
 ## Folder Structure
 
+NMNH-2.0/
+│
+├─ backend/                     # Flask app + Python code
+│   ├─ app.py                   # Main Flask application
+│   ├─ requirements.txt         # Python dependencies
+│   ├─ Dockerfile               # Dockerfile for web container
+│   └─ templates/               # HTML templates
+│       ├─ login.html           # Login page with candlestick background
+│       └─ index.html           # Dashboard page after login
+│
+├─ docker-compose.yml           # Multi-container setup (web + db)
+├─ README.md                    # Project description, setup, CI/CD instructions
+├─ jenkins/                     # (Optional) Jenkins pipeline scripts
+│   └─ Jenkinsfile              # Jenkins pipeline for CI/CD
+├─ db_init/                     # (Optional) database initialization scripts
+│   └─ init.sql                 # SQL scripts to create tables & dummy users
+├─ static/                      # Static assets like CSS, JS, images
+│   ├─ css/
+│   │   └─ style.css            # Styles for login/dashboard
+│   └─ js/
+│       └─ main.js              # Custom JS scripts for animations or charts
+└─ utils/                       # (Optional) Helper Python scripts
+    └─ data_fetcher.py          # For fetching live BTC/Nifty data
